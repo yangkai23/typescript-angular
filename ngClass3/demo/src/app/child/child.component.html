@@ -1,0 +1,23 @@
+<p>child works!</p>
+<ng-content select=".header" ></ng-content>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">type</th>
+        <th scope="col">price</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+      <!-- index is a keyword indiactes index column basically -->
+      <tr *ngFor="let p of products;index as i">
+        <td>{{i+1}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.type}}</td>
+        <td>{{p.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-content select=".link"></ng-content>

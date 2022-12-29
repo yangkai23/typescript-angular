@@ -1,0 +1,9 @@
+<p>parent works!</p>
+<button (click)="toggleChild()">Toggle</button>
+<app-child *ngIf="flag" [username]="username">
+    <h3 #cheader>content projection</h3>
+</app-child>
+<input type="text" [(ngModel)]="username">
+{{username}}
+<h2 #pheader>normal html element in parent component</h2>
+<p #pheader>this is normal paragraph</p>

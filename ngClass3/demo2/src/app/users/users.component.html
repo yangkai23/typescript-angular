@@ -1,0 +1,27 @@
+<p>users works!</p>
+<p>user Component!</p>
+<div class="container">
+    <h1> Details</h1>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">id</th>
+          <th scope="col">designation</th>
+    
+        </tr>
+      </thead>
+      <tbody>
+        <!-- index is a keyword indiactes index column basically -->
+        <tr *ngFor="let p of persons;index as i">
+          <td>{{i+1}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.id}}</td>
+          <td>{{p.designation}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+

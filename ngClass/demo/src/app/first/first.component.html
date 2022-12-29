@@ -1,0 +1,33 @@
+<h1>First Component</h1>
+<!-- /interpolation -->
+<h2>{{test}}</h2>
+<h2>5+7</h2>
+<h2>{{5+7}}</h2>
+<!-- property binding -->
+<input type="text" [value]="inputval">
+<!-- style binding -->
+<p [style.color]="flag?c1:c2">Clarivate</p>
+<!-- class binding -->
+<p [class]="flag?'para1':'para2'">This is class binding</p>
+<!-- attribute binding -->
+<table border="solid">
+<tr>
+<th [attr.colspan]="spanval">Person</th>
+</tr>
+<tr>
+    <td>Virat Kohli</td>
+    <td>Kohli</td>
+</tr>
+<tr>
+    <td>Rohit </td>
+    <td>Sharma</td>
+</tr>
+
+</table>
+<!-- event binding  -->
+<button (click)="display()">click me</button>
+
+
+<!-- two way binding  -->
+<input type="text" [(ngModel)]="testv">
+{{testv}}
